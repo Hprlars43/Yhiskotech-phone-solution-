@@ -1,0 +1,696 @@
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "puppin", sans-serif;
+    font-size: 3rem;
+    line-height: 1.7;
+}
+h1{
+    font-size: 4rem;
+    letter-spacing: -0.5;
+    font-weight: 800;
+}
+h4{
+    line-height: 0;
+}
+p{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+nav{
+display: flex;
+justify-content: space-between;
+background-color: blue;
+width: 100%;
+height: 72px;
+gap: 30rem;
+position: fixed;
+z-index: 5;
+margin: 0 auto;
+
+
+}
+ul{
+   display: flex;
+   gap: 4rem;
+   align-items: center;
+   list-style: none;
+   padding-right: 3.5rem;
+   
+}
+
+a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+   
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    color:#fff;
+
+    transition: 1s ease;
+
+}
+
+a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    background-color: #fff;
+    color: lightcoral;
+    
+  transform: scale(1.5, 2.1);
+}
+
+img[alt = "logo"]{
+    width: 150px;
+    height: 70px;
+    padding-left: 1rem;
+    
+    
+}
+
+img[alt = "logo"]:hover{
+      transition: none;
+    transform: none;
+}
+
+
+header{
+    width:100%;
+    background-color: lightgray;
+    height: 1250px;
+    
+}
+#bar{
+    padding-top: 60px;
+    text-align: center;
+     color: black;
+     background-color: lightcoral;
+     padding-bottom: 10px;
+     position: sticky;
+     top:0;
+     height: 150px;
+}
+
+header:target{
+
+    background-color:darkcyan;
+}
+
+#home{
+    padding-top: 5rem;
+}
+#home > h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #7f1440;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.pics{
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    column-gap:15rem;
+    row-gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    
+}
+
+.pics > p {
+    width: 60rem;
+    color: #7f1440;
+    font-weight: 700;
+    font-size: 3rem;
+}
+div > img[alt ~= "image"]{
+width: 25rem;
+height: 20rem;
+padding-left: 3.5rem;
+transition: 1s ease;
+
+}
+div > img[alt ~= "image"]:hover{
+
+transform: scale(2, 2);
+}
+
+div > img[alt ~= "image"] ~ p{
+margin-left: 0;
+width: 30rem;
+padding-top: 20px;
+font-size: 2rem;
+font-weight: 700;
+margin-right:30rem;
+color:darkblue;
+
+
+}
+
+#service{
+    background-color:darkgray;
+    line-height: 2;
+    height: 700px;
+
+}
+
+
+.main-service{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    color: #fff; 
+}
+.service-1,.service-2{
+    bordr: 3px black solid;
+    font-size: 2rem;
+    height: 500px;
+    line-height: 2.7;
+    text-align: center;
+
+    margin: 0 auto;
+    
+}
+
+#service > h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 900;
+    color:blue;
+    text-decoration: 5px black underline;
+}
+
+#service:target{
+    background-color:#df86ab;
+}
+
+
+#pricing{
+    background-color:lightgray;
+    height: 1360px;
+    min-height: 500px;
+}
+#pricing:target{
+    background-color: darkcyan;
+    
+}
+#pricing > div:first-child{
+    padding-top: 70px;
+    text-align: center;
+    color:#7f1440;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+#pricing > div:first-child + div {
+    display: grid;
+    grid-template-columns: 50rem 50rem;
+    column-gap: 5rem;
+    font-size: 3rem;
+    padding-top: 50px;
+    row-gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+.iphone,.infinix,.samsung,.tecno{
+    border: 2px black solid;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+     
+    
+}
+.iphone > h2,.infinix > h2,.samsung > h2,.tecno > h2{
+    background-color: #7f1440;
+    color: #fff;
+}
+#pricing > p{
+    text-align: center;
+    font-weight: 800;
+}
+
+#contact{
+
+    padding-top: 70px;
+    background-color:darkgray;
+    color: darkblue;
+    text-align: center; 
+    height: 72rem;      
+}
+#contact:target{
+ background-color: darkcyan;
+}
+.social{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    column-gap: 10rem;
+}
+
+a > img {
+    padding-top: 100px;
+    width: 100px;
+    height: 180px;
+    transition: 1s ease;
+     margin: 0 auto;
+    max-width: 1200px;
+}
+img:hover{
+    transform: scale(2, 2);
+    
+}
+
+
+address{
+    padding-top: 15rem;
+    color: #fff;
+    padding-bottom: 7rem;
+}
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+
+    max-width: 1525px;
+}
+
+
+ @media(max-width:69.7rem) {
+    /* 69.7 x 16px = 1115.2px */
+
+    html{
+        font-size: 55%;
+    }
+
+    div > img[alt ~= "image"] ~ p{
+    width: 29rem ;
+     font-size: 2.3rem;
+    }
+#bar{
+padding-top: 7.4rem;
+
+}
+
+
+#contact{
+    height: 77rem;
+}
+
+
+
+}
+
+
+
+
+ @media(max-width:58.1rem) {
+          /* 58.1 x 16px = 929.6px */
+    html{
+        font-size: 50%;
+    }
+
+    nav{
+        gap:21rem;
+    }
+
+
+    
+    div > img[alt ~= "image"] ~ p{
+
+    width: 25rem ;
+     
+    }
+     
+
+header{
+    height: 145rem;
+}
+#service{
+    height: 70rem;
+}
+
+
+#pricing{
+    height: 147rem;
+}
+
+#contact{
+    height: 80rem;
+} 
+
+
+    a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.5, 2.8);
+
+} 
+
+
+
+
+a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+
+  font-size: 2rem;
+
+}
+
+
+
+#bar{
+
+
+padding-top: 8.4rem;
+
+}
+
+}
+
+
+
+
+
+
+
+@media(max-width:51.5rem) {
+        /* 51.5 x 16px = 824px */
+     html{
+        font-size: 47%;
+    } 
+
+ #contact{
+    height: 87rem;
+} 
+
+/* #pricing{
+    height: 260rem;
+}
+ */
+
+
+
+nav{
+    gap:8rem;
+}
+
+
+
+ul{
+
+    gap: 3rem;
+}
+
+
+a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+
+  font-size: 2.7rem;
+
+}
+
+
+    a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.4, 2.5);
+
+} 
+
+#bar{
+padding-top: 13rem;
+
+}
+
+.social{
+column-gap: 7rem;
+
+}
+
+#service{
+    height: 75rem;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:41.8rem) {
+          /* 41.8 x 16px = 668.8px */
+    html{
+        font-size: 35%;
+    } 
+
+#pricing{
+    height: 157rem;
+}
+
+#contact{
+    height: 93rem;
+}
+
+header{
+    height: 153rem;
+}
+
+
+a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+
+  font-size: 2.5rem;
+
+}
+
+
+
+    a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.4, 3);
+
+} 
+
+nav{
+    gap: 10rem;
+}
+
+ul{
+
+    gap: 3rem;
+}
+
+
+#bar{
+padding-top: 15rem;
+
+}
+
+img:hover{
+    transform: scale(1.7, 2);
+    
+}
+
+
+}
+
+
+
+
+
+
+@media(max-width:37.7rem) {
+            /* 37.7 x 16px = 603.2Px */
+html{
+        font-size: 33%;
+    } 
+
+
+ul{
+
+    gap: 2.3rem;
+}
+
+a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+
+  font-size: 3rem;
+
+}
+
+
+   a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.4, 2.7);
+
+}
+
+#contact{
+    height: 97rem;
+}
+
+nav{
+    gap: 5rem;
+}
+
+header{
+    height: 159rem;
+} 
+
+
+img[alt = "logo"]{
+    width: 18rem;
+    height: 13rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+div > img[alt ~= "image"]{
+      padding-left: 0;
+      padding-right: 5rem;
+}
+
+.pics{
+column-gap: 11rem;
+}
+
+
+
+#pricing > div:first-child + div {
+column-gap:0;
+
+}
+
+
+.iphone,.infinix,.samsung,.tecno{
+width: 70%;
+}
+}
+
+
+
+@media(max-width:33rem) {
+            /* 33 x 16px = 528px */
+html{
+        font-size: 30%;
+    } 
+
+
+    #contact{
+    height: 117rem;
+}
+
+p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.4, 3);
+
+}
+
+header{
+    height: 175rem;
+}
+
+#pricing{
+    height: 170rem;
+}
+
+nav{
+    gap: 5rem;
+
+
+
+}
+
+}
+
+
+
+@media(max-width:29.6rem) {
+            /* 29.6 x 16px = 473px */
+html{
+        font-size: 25%;
+    } 
+
+    header{
+    height: 190rem;
+}
+
+#pricing{
+    height: 180rem;
+}
+
+
+#service{
+    height: 85rem;
+}
+
+    #contact{
+    height: 128rem;
+}
+
+#bar{
+    padding-top: 87px;
+}
+
+}
+
+
+@media(max-width:24.8rem) {
+            /* 24.8 x 16px = px 396.8*/
+
+
+ a[href ^= "#"]:link,li > a[href ^= "#"]:visited{
+
+  font-size: 2.7rem;
+
+}
+
+a[href ^= "#"]:active,li > a[href ^= "#"]:hover{
+    
+    
+  transform: scale(1.4, 4);
+
+}
+
+a > img {
+    width: 80px;
+}
+
+img:hover{
+    transform: scale(1.2, 2);
+    
+}
+
+}
+
